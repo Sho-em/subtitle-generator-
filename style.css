@@ -1,0 +1,168 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    flex-direction: column;
+    height: 700px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    gap: 15px;
+ 
+}
+.wrapper input{
+   width: 500px;
+   font-size: 18px;
+   font-weight: lighter;
+   padding: 0 10px;
+   height: 40px;
+   border-radius: 10px;
+   border: 1px solid gray;
+}
+
+#importBtn{
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(157, 168, 250);
+    transition: 0.2s ease;   
+}
+#importBtn:hover{
+    background-color: rgb(78, 78, 244);
+}
+
+#pasteText{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.upload-section{
+    margin: 10px 0;
+    width: 500px;
+}
+
+.file-label{
+    display: block;
+    width: 100%;
+    padding: 20px 3px;
+    background-color: rgb(157, 168, 250);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+
+.file-label:hover{
+    background-color: rgb(78, 78, 244);
+}
+
+#fileName{
+    display: inline-block;
+    font-weight: 500;
+}
+
+.divider{
+    margin: 15px 0;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 42%;
+    height: 1px;
+    background: gray;
+}
+
+.divider::before{
+    left: 0;
+}
+
+.divider::after{
+    right: 0;
+}
+
+.divider span{
+    background: white;
+    padding: 0 15px;
+    color: gray;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+}
+
+#status{
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(78, 78, 244);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(78, 78, 244);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#subtitles {
+    display: none;
+    width: 500px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+}
+
+#subtitles:not(:empty){
+    display: block;
+}
+
+#downloadBtn {
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(78, 244, 139);
+    transition: 0.2s ease;
+    margin-top: 15px;
+}
+
+#downloadBtn:hover {
+    background-color: rgb(40, 200, 100);
+}

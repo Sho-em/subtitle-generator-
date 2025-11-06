@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subtitle Generator</h1>
+        <div class="wrapper">
+            <span id="pasteText">Paste the link below and click import button</span>
+            <input type="text" id="userAPI" placeholder="Enter your API here...">
+            <br>
+
+            <!--Video Section-->
+            <div class="upload-section">
+                <label for="videoFile" class="file-label">
+                    <span id="fileName">Choose Video File</span>
+                    <input type="file" id="videoFile" accept="video/*" style="display: none;">
+                </label>
+            </div>
+
+            <!--OR devider-->
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+
+            <input type="text" id="videoURL" placeholder="Paste URL here...">
+            <br>
+            <button onclick="generateSubtitles()" id="importBtn">Import Subtitle</button>
+
+
+            <div id="status"></div>
+            <pre id="subtitles"></pre>
+            <button style="display: none;" id="downloadBtn">Download SRT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
